@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.lotterysystem.app.ui.fragment.home.HomeFragment"
+        android:label="Lottery Tickets"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_lotteryDetailPageFragment"
+            app:destination="@id/lotteryDetailPageFragment" >
+
+            <argument android:name="ticket_param"
+                app:argType="com.lotterysystem.app.ui.fragment.home.response.Ticket"
+                app:nullable="false"/>
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/lotteryDetailPageFragment"
+        android:name="com.lotterysystem.app.ui.fragment.tickets.LotteryDetailPageFragment"
+        android:label="Lottery Results"
+        tools:layout="@layout/fragment_lottery_detail_page" >
+
+        <argument android:name="ticket_param"
+            app:argType="com.lotterysystem.app.ui.fragment.home.response.Ticket"
+            app:nullable="false"/>
+
+    </fragment>
+
+</navigation>

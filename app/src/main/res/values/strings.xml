@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lottery System</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lottery_tickets_unavailable">Lottery Tickets unavailable!</string>
+    <string name="dummy_date">06/10.21 05:57 AM</string>
+    <string name="dummy_id">Ticket ID: 1</string>
+    <string name="date_format_d_m_y_h_m_a">dd/MM/yy hh:mm a</string>
+    <string name="lottery_results">Lottery Results</string>
+    <string name="your_total_score">Total Wins: €</string>
+</resources>
